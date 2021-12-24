@@ -55,7 +55,29 @@ namespace degiskenler
             int integer3 = integer1 * integer2;
 
             //boolean
-            bool bo1 = 10<2;
+            bool bo1 = 10<2;  //false değeri döner
+
+            //Değişken Dönüşümleri
+            //int ten stringe dönüştürme
+            string s20 = "20";
+            int i20 = 20;
+            string yenideger = s20 + i20.ToString();
+            Console.WriteLine(yenideger);  //Çıktı:2020
+
+            //stringden inte dönüştürme
+            //int i21 = i20 + Convert.ToInt32(s20);
+            int i21 = i20 + int.Parse(s20);
+            Console.WriteLine(i21);  //Çıktı:40
+
+            //DateTime-Stirnge dönüştürme
+            string  datetime = DateTime.Now.ToString("dd.MM.yyyy");
+            Console.WriteLine(datetime);  //sistem gün ay yıl
+            
+            string datetime2 = DateTime.Now.ToString("dd/MM/yyyy");
+            Console.WriteLine(datetime2);  //sistem gün ay yıl / ile
+
+            string hour = DateTime.Now.ToString("HH:mm");
+            Console.WriteLine(hour);  //sistem saat dakika
 
         }
     }
