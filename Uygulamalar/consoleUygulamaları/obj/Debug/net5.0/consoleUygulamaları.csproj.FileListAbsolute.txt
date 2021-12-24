@@ -1,0 +1,16 @@
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.exe
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.deps.json
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.runtimeconfig.json
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.runtimeconfig.dev.json
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.dll
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\ref\consoleUygulamaları.dll
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\bin\Debug\net5.0\consoleUygulamaları.pdb
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.csproj.AssemblyReference.cache
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.AssemblyInfoInputs.cache
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.AssemblyInfo.cs
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.csproj.CoreCompileInputs.cache
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.dll
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\ref\consoleUygulamaları.dll
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.pdb
+C:\Users\birca\OneDrive\Belgeler\Projelerim\Uygulamalar\consoleUygulamaları\obj\Debug\net5.0\consoleUygulamaları.genruntimeconfig.cache
