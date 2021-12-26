@@ -32,6 +32,26 @@ namespace operatorler
                 Console.WriteLine("Great");
             if(isSuccess && !isCompleted)
                 Console.WriteLine("Perfect");
+
+            Console.WriteLine("***********İlişkisel Operatörler**********");
+            //İlişkisel Operatörler
+            // < > >= <= == !=
+            int a =3;
+            int b = 4;
+
+            bool sonuc = a<b;
+            Console.WriteLine("a<b : "+sonuc);
+            
+            sonuc = a>b;
+            Console.WriteLine("a>b : "+sonuc);
+            sonuc = a>=b;
+            Console.WriteLine("a>=b : "+sonuc);
+            sonuc = a<=b;
+            Console.WriteLine("a<=b : "+sonuc);
+            sonuc = a==b;
+            Console.WriteLine("a==b : "+sonuc);
+            sonuc = a!=b;
+            Console.WriteLine("a!=b : "+sonuc);
         }
     }
 }
