@@ -49,6 +49,15 @@ namespace tipDonusumleri
 
            string zz = 12.5f.ToString();
            Console.WriteLine("zz : "+zz);
+
+           //System.Convert
+           Console.WriteLine("*******System.Convert Sınıfı*******");
+           string s1 = "10", s2 = "20";
+           int sayi1, sayi2, Toplam;
+           sayi1 = Convert.ToInt32(s1);
+           sayi2 = Convert.ToInt32(s2);
+           Toplam = sayi1+sayi2;
+           Console.WriteLine("Toplam : "+Toplam);
         }
     }
 }
