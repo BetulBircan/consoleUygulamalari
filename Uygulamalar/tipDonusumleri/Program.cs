@@ -62,6 +62,7 @@ namespace tipDonusumleri
            //Parse --->Not:Bir değişkeni aynı blokta aynı isimle tanımlayamayız fakat farklı blokta tanımlayabiliriz.Değişken adları tükendiği düşünüldüğü için ayrı metod tanımlandı.
             Console.WriteLine("*******Parse*******"); 
             ParseMethod();
+            //Not:Parse methodu sadece stringleri dönüştürür.
         }
          public static void ParseMethod()
         {
