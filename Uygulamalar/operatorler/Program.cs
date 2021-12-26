@@ -19,6 +19,19 @@ namespace operatorler
             Console.WriteLine("y /= 1 : "+y);
             x *= 2;
             Console.WriteLine("x *= 2 : "+x);
+
+            Console.WriteLine("***********Mantıksal Operatörler**********");
+            //Mantıksal Operatörler
+            // && || !(Ve,Veya,Değil)
+            bool isSuccess = true;
+            bool isCompleted = false;
+
+            if(isSuccess && isCompleted)
+                Console.WriteLine("Fine");  //koşulun biri true diğeri false.ve de her iki koşul sağlanması gerekir.Program burayı atlar.
+            if(isSuccess || isCompleted)
+                Console.WriteLine("Great");
+            if(isSuccess && !isCompleted)
+                Console.WriteLine("Perfect");
         }
     }
 }
