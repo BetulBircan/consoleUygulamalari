@@ -3,9 +3,10 @@ C# ta Uygulamalar adlı klasör oluşturuldu.Bundan sonra c# console projeleri b
 -İlk uygulama consoleUygulamaları adlı bir dosya oluşturup ilk uygulamamı yaptım.
 
 ** İlk Uygulamam: **
+
 ![sonuc](https://user-images.githubusercontent.com/86554799/147359844-3b2c0c32-5e64-4fe9-850e-d0e3722d5de4.jpg)
 
-İkinci uygulamamı da Uygulamalar/degiskenler klasörünün içerisine yaptım. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama yaptım.
+--İkinci uygulamamı da Uygulamalar/degiskenler klasörünün içerisinde oluşturdum. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama geliştirdim.
 Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
 ** İkinci Uygulamamın kodlarının bir kısmı: **
@@ -60,6 +61,45 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
 ** Program Sonucu: **
 
 ![degiskensonuc](https://user-images.githubusercontent.com/86554799/147374383-6711a8a7-9040-4ae4-97c9-ba7fc88a2fc7.jpg)
+
+--Üçüncü uygulamamı da Uygulamalar/operatörler klasörünün içerisinde oluşturdum. Bu projede de aritmetik,mantıksal ilişkisel,atama operatörlerin nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
+
+** Üçüncü Uygulamamın kodlarının bir kısmı: **
+
+```
+ Console.WriteLine("***********Atama ve İşlemli Atama Operatörleri**********");
+            //Atama ve İşlemli Atama
+            int x = 3;
+            int y = 3;
+            
+            y = y+2;
+            Console.WriteLine("y = y+2 : "+y);
+            y += 2;  //işlemli atama olur.
+            Console.WriteLine("y += 2 : "+y);
+            y /= 1; 
+            Console.WriteLine("y /= 1 : "+y);
+            x *= 2;
+            Console.WriteLine("x *= 2 : "+x);
+
+            Console.WriteLine("***********Mantıksal Operatörler**********");
+            //Mantıksal Operatörler
+            // && || !(Ve,Veya,Değil)
+            bool isSuccess = true;
+            bool isCompleted = false;
+
+            if(isSuccess && isCompleted)
+                Console.WriteLine("Fine");  //koşulun biri true diğeri false.ve de her iki koşul sağlanması gerekir.Program burayı atlar.
+            if(isSuccess || isCompleted)
+                Console.WriteLine("Great");
+            if(isSuccess && !isCompleted)
+                Console.WriteLine("Perfect");
+```
+
+** Program Sonucu: **
+
+![operatörler](https://user-images.githubusercontent.com/86554799/147396304-9ff94b6d-f292-4ab5-b34b-4ef2614c8060.jpg)
+
 
 
 
