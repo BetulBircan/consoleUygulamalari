@@ -26,6 +26,20 @@ namespace tipDonusumleri
            char f = 'k';
            object g = e+f+d;
            Console.WriteLine("g : "+g);  //bütün veri tipleri objectten türemiştir.Bu yüzden object hepsinden üstündedir.
+
+           //Explicit Conversion (Bilinçli Dönüşüm):c# ın kendi kendine yapamadığı tür dönüşümleridir. Bir şekilde convert ve parse ı ve de ToString() i kulanarak buradaki dönüşümü derleyiciye belirtmek gerekiyor.
+           Console.WriteLine("*******Explicit Conversion*******");
+           int x = 4;
+           byte y = (byte)x; //byte y = (byte)x -->sağdaki değişkeni parantez içerisindeki türe dönüştürür.
+           Console.WriteLine("y : "+y);
+
+           int z = 100;
+           byte t = (byte)z;
+           Console.WriteLine("t : "+t);
+
+           float w = 10.3f;
+           byte v = (byte)w;
+           Console.WriteLine("v : "+v);
         }
     }
 }
