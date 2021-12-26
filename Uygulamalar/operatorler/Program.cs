@@ -52,6 +52,26 @@ namespace operatorler
             Console.WriteLine("a==b : "+sonuc);
             sonuc = a!=b;
             Console.WriteLine("a!=b : "+sonuc);
+
+            Console.WriteLine("***********Aritmetik Operatörler**********");
+            //Aritmetik Operatörler
+            // / * + - %-mod alma
+            int sayi1 = 10;
+            int sayi2 = 5;
+            int sonucAo = sayi1/sayi2;
+            Console.WriteLine("sayi1/sayi2 : "+sonucAo);
+            
+            sonucAo = sayi1*sayi2;
+            Console.WriteLine("sayi1*sayi2 : "+sonucAo);
+            sonucAo = sayi1+sayi2;
+            Console.WriteLine("sayi1+sayi2 : "+sonucAo);
+            sonucAo = sayi1 ++;
+            Console.WriteLine("sayi1++ : "+sayi1);
+            sonucAo = sayi1-sayi2;
+            Console.WriteLine("sayi1-sayi2 : "+sonucAo);
+
+            int sonucAo2 = 20%3;
+            Console.WriteLine("Modu : "+sonucAo2);
         }
     }
 }
