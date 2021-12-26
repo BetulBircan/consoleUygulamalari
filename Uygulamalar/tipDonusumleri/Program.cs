@@ -40,6 +40,15 @@ namespace tipDonusumleri
            float w = 10.3f;
            byte v = (byte)w;
            Console.WriteLine("v : "+v);
+
+           //******ToString() Metodu ****** 
+           Console.WriteLine("*******ToString() Metodu*******");
+           int xx = 6;
+           string yy = xx.ToString();
+           Console.WriteLine("yy : "+yy);
+
+           string zz = 12.5f.ToString();
+           Console.WriteLine("zz : "+zz);
         }
     }
 }
