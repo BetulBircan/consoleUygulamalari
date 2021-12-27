@@ -13,30 +13,36 @@ namespace hataYonetimi
             Run Time Hatalar: Programı çalıştırdığımız zamanda ortaya çıkan hatalardır. Run time daki hataları mümkün olduğunca handle etmek
             yani yakalıyor olmak  gerekiyor ki programı beklenmedik bir anda kırmasın başka bir probleme yol açmasın...
             */
-            try //try içerisine hataya neden olabilecek kodlar yazılır.
-            {
-                Console.Write("Bir sayi giriniz: ");
-                int sayi = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Girmiş olduğunuz sayı: "+sayi);
-            }
-            catch(Exception ex)  //hatayı yakaladığı yer.Hata ile karşılaşıldığında ne yapılacağı buraya yazılır.
-            {
-                Console.WriteLine("Hata: "+ex.Message.ToString()); 
-            }
-            finally   //Hata olsun olmasın mutlaka yapılmasını istediğimiz işler varsa buraya yazarız.Burayı yazmak zorunlu değil.
-            {
-                Console.WriteLine("işlem Tamamlandı.");
-            }
+            // try //try içerisine hataya neden olabilecek kodlar yazılır.
+            // {
+            //     Console.Write("Bir sayi giriniz: ");
+            //     int sayi = Convert.ToInt32(Console.ReadLine());
+            //     Console.WriteLine("Girmiş olduğunuz sayı: "+sayi);
+            // }
+            // catch(Exception ex)  //hatayı yakaladığı yer.Hata ile karşılaşıldığında ne yapılacağı buraya yazılır.
+            // {
+            //     Console.WriteLine("Hata: "+ex.Message.ToString()); 
+            // }
+            // finally   //Hata olsun olmasın mutlaka yapılmasını istediğimiz işler varsa buraya yazarız.Burayı yazmak zorunlu değil.
+            // {
+            //     Console.WriteLine("işlem Tamamlandı.");
+            // }
 
              
             //Kendimiz özel hata mesajı vermek isteyebiliriz.Örneğin;boş değer girdiniz gibi.
             try
             {
-                int a = int.Parse(null);
+                //int a = int.Parse(null);
+                int a = int.Parse("test");
             }
             catch (ArgumentNullException ex)
             {
                 Console.WriteLine("Boş değer girilemez!");
+                Console.WriteLine(ex);
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Veri tipi uygun değil.");
                 Console.WriteLine(ex);
             }
         }
