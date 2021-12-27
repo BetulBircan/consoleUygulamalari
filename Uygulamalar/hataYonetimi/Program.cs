@@ -52,6 +52,10 @@ namespace hataYonetimi
                 Console.WriteLine("Çok küçük ya da çok büyük değer aralığı girdiniz. ");
                 Console.WriteLine(ex);
             }
+            finally
+            {
+                Console.WriteLine("İşlem Tamamlandı.");
+            }
         }
     }
 }
