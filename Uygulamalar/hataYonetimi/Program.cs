@@ -27,6 +27,18 @@ namespace hataYonetimi
             {
                 Console.WriteLine("işlem Tamamlandı.");
             }
+
+             
+            //Kendimiz özel hata mesajı vermek isteyebiliriz.Örneğin;boş değer girdiniz gibi.
+            try
+            {
+                int a = int.Parse(null);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine("Boş değer girilemez!");
+                Console.WriteLine(ex);
+            }
         }
     }
 }
