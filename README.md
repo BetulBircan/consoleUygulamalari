@@ -1,17 +1,19 @@
 # Console uygulamaları
 C# ta Uygulamalar adlı klasör oluşturuldu.Bundan sonra c# console projeleri bu dosyaya eklenecektir.
+
 -İlk uygulama consoleUygulamaları adlı bir dosya oluşturup ilk uygulamamı yaptım.
 
-** İlk Uygulamam: **
+**İlk Uygulamam:**
 
 ![sonuc](https://user-images.githubusercontent.com/86554799/147359844-3b2c0c32-5e64-4fe9-850e-d0e3722d5de4.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --İkinci uygulamamı da Uygulamalar/degiskenler klasörünün içerisinde oluşturdum. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama geliştirdim.
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
-** İkinci Uygulamamın kodlarının bir kısmı: **
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/degiskenler dosyasından ulaşabilirsiniz. 
+
+**İkinci Uygulamamın kodlarının bir kısmı:**
 
 ```
  Console.WriteLine("");
@@ -60,16 +62,17 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
             Console.WriteLine(hour);  //sistem saat dakika
 ```
 
-** Program Sonucu: **
+**Program Sonucu:**
 
 ![degiskensonuc](https://user-images.githubusercontent.com/86554799/147374383-6711a8a7-9040-4ae4-97c9-ba7fc88a2fc7.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --Üçüncü uygulamamı da Uygulamalar/operatörler klasörünün içerisinde oluşturdum. Bu projede de aritmetik,mantıksal ilişkisel,atama operatörlerin nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
-** Üçüncü Uygulamamın kodlarının bir kısmı: **
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/operatörler dosyasından ulaşabilirsiniz. 
+
+**Üçüncü Uygulamamın kodlarının bir kısmı:**
 
 ```
  Console.WriteLine("***********Atama ve İşlemli Atama Operatörleri**********");
@@ -100,16 +103,17 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
                 Console.WriteLine("Perfect");
 ```
 
-** Program Sonucu: **
+**Program Sonucu:**
 
 ![operatörler](https://user-images.githubusercontent.com/86554799/147396304-9ff94b6d-f292-4ab5-b34b-4ef2614c8060.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --Dördüncü uygulamamı da Uygulamalar/tipDonusumleri klasörünün içerisinde oluşturdum. Bu projede de veri tipi dönüşümlerinden implicit convertion(biliçli dönüşüm) ve explicit convertion(bilinçsiz dönüşüm)ın  nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
-** Dördüncü Uygulamamın kodlarının bir kısmı: **
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/tipDonusumleri dosyasından ulaşabilirsiniz. 
+
+**Dördüncü Uygulamamın kodlarının bir kısmı:**
 
 ```
 
@@ -155,11 +159,61 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
         } 
 
 ```
-** Program Sonucu **
+**Program Sonucu**
 
 ![tipDonusumleri](https://user-images.githubusercontent.com/86554799/147423121-4141ac26-c179-41ab-8f55-7760fe46b78f.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Beşinci uygulamamı da Uygulamalar/hataYonetimi klasörünün içerisinde oluşturdum. Bu projede de hata yönetiminden CompireTime ve Runtime hataların  nasıl oluştuğuna ve yönetildiğini inceleyip  bunlarla ilgili uygulamalar geliştirdim.İlk başta hata yönetimi nedir ne değidir bunu belirtmek isterim:
+
+**Hata Yönetimi:**
+
+Hatalar oluşma zamanına göre ikiye ayrılırlar.Compire time ve run time olarak düşünebiliriz.
+
+**Compire Time Hatalar:** Daha biz kodu yazarken derleyicinin bize gösterdiği hatalardır.Mesela değişken tanımlarken değişken tanımlama
+kurallarına aykırı bir şekilde tanımlamaya çalışırken daha kodu yazarken derlwyici hata verir.
+
+**Run Time Hatalar:** Programı çalıştırdığımız zamanda ortaya çıkan hatalardır. Run time daki hataları mümkün olduğunca handle etmek
+yani yakalıyor olmak  gerekiyor ki programı beklenmedik bir anda kırmasın başka bir probleme yol açmasın...
+
+Try catch blokları sayesinde uygulama içerisinde bir hata oluştuğunda belirtilen işlemler yaptırılabilir.
+
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/hataYonetimi dosyasından ulaşabilirsiniz. 
+
+**Beşinci Uygulamamın kodlarının bir kısmı:**
+
+```
+             try //try içerisine hataya neden olabilecek kodlar yazılır.
+             {
+                 Console.Write("Bir sayi giriniz: ");
+                 int sayi = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Girmiş olduğunuz sayı: "+sayi);
+             }
+             catch(Exception ex)  //hatayı yakaladığı yer.Hata ile karşılaşıldığında ne yapılacağı buraya yazılır.
+             {
+                 Console.WriteLine("Hata: "+ex.Message.ToString()); 
+             }
+             finally   //Hata olsun olmasın mutlaka yapılmasını istediğimiz işler varsa buraya yazarız.Burayı yazmak zorunlu değil.
+             {
+                 Console.WriteLine("işlem Tamamlandı.");
+             }
+             
+             //Kendimiz özel hata mesajı vermek isteyebiliriz.Örneğin;boş değer girdiniz gibi.
+            try
+            {
+                int a = int.Parse(null);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine("Boş değer girilemez!");
+                Console.WriteLine(ex);
+            }
+```
+**Program Sonucu**
 
 
+![hatayonetimi1](https://user-images.githubusercontent.com/86554799/147514023-d0af584d-be18-4c84-9cba-07a9a71a9ce5.jpg)
+![hatayonetimi2](https://user-images.githubusercontent.com/86554799/147514025-9ca55d46-5819-49b6-a92b-2959865c96bd.jpg)
 
 
