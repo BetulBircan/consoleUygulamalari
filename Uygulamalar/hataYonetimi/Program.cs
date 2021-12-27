@@ -33,7 +33,9 @@ namespace hataYonetimi
             try
             {
                 //int a = int.Parse(null);
-                int a = int.Parse("test");
+                // int a = int.Parse("test");
+                //bir diğer int.parse hatası overflow exception hatası .Yani girilen değer veri tipinin değer aralığınndan yüksekse veya düşükse.
+                int a = int.Parse("-20000000000");
             }
             catch (ArgumentNullException ex)
             {
@@ -43,6 +45,11 @@ namespace hataYonetimi
             catch (FormatException ex)
             {
                 Console.WriteLine("Veri tipi uygun değil.");
+                Console.WriteLine(ex);
+            }
+             catch (OverflowException ex)
+            {
+                Console.WriteLine("Çok küçük ya da çok büyük değer aralığı girdiniz. ");
                 Console.WriteLine(ex);
             }
         }
