@@ -6,6 +6,8 @@ C# ta Uygulamalar adlı klasör oluşturuldu.Bundan sonra c# console projeleri b
 
 ![sonuc](https://user-images.githubusercontent.com/86554799/147359844-3b2c0c32-5e64-4fe9-850e-d0e3722d5de4.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 --İkinci uygulamamı da Uygulamalar/degiskenler klasörünün içerisinde oluşturdum. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama geliştirdim.
 Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
@@ -62,6 +64,8 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
 
 ![degiskensonuc](https://user-images.githubusercontent.com/86554799/147374383-6711a8a7-9040-4ae4-97c9-ba7fc88a2fc7.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 --Üçüncü uygulamamı da Uygulamalar/operatörler klasörünün içerisinde oluşturdum. Bu projede de aritmetik,mantıksal ilişkisel,atama operatörlerin nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
 Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
 
@@ -99,6 +103,61 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu
 ** Program Sonucu: **
 
 ![operatörler](https://user-images.githubusercontent.com/86554799/147396304-9ff94b6d-f292-4ab5-b34b-4ef2614c8060.jpg)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Dördüncü uygulamamı da Uygulamalar/tipDonusumleri klasörünün içerisinde oluşturdum. Bu projede de veri tipi dönüşümlerinden implicit convertion(biliçli dönüşüm) ve explicit convertion(bilinçsiz dönüşüm)ın  nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne bu dosyadan ulaşabilirsiniz. 
+
+** Dördüncü Uygulamamın kodlarının bir kısmı: **
+
+```
+
+//Tip Dönüşümleri
+           //İmplicit Conversion (Bilinçsiz Dönüşüm): Düşük kapasiteli bir değişkeni kendinden daha yüksek kapasiteli başka bir değişkene atanma işlemi.sistem kendisi otomotik   dönüştürür bizim parse convert diye mmetod yazmamıza gerek kalmaz.
+           Console.WriteLine("*******İmplicit Conversion*******");
+           byte a = 5;
+           sbyte b = 30;
+           short c = 10;
+           
+           int d = a+b+c;
+           Console.WriteLine("d : "+d);
+           
+           //Explicit Conversion (Bilinçli Dönüşüm):c# ın kendi kendine yapamadığı tür dönüşümleridir. Bir şekilde convert ve parse ı ve de ToString() i kulanarak buradaki dönüşümü derleyiciye belirtmek gerekiyor.
+           Console.WriteLine("*******Explicit Conversion*******");
+           int x = 4;
+           byte y = (byte)x; //byte y = (byte)x -->sağdaki değişkeni parantez içerisindeki türe dönüştürür.
+           Console.WriteLine("y : "+y);
+           
+            //******ToString() Metodu ****** 
+           Console.WriteLine("*******ToString() Metodu*******");
+           int xx = 6;
+           string yy = xx.ToString();
+           Console.WriteLine("yy : "+yy);
+           
+            //Parse --->Not:Bir değişkeni aynı blokta aynı isimle tanımlayamayız fakat farklı blokta tanımlayabiliriz.Değişken adları tükendiği düşünüldüğü için ayrı metod tanımlandı.
+            Console.WriteLine("*******Parse*******"); 
+            ParseMethod();
+
+        }
+        public static void ParseMethod()
+        {
+            string metin1 = "10";
+            string metin2 = "10,25";
+            int rakam1;
+            double double1;
+
+            rakam1 = int.Parse(metin1);
+            Console.WriteLine("rakam1 : "+rakam1);
+            double1 = double.Parse(metin2);
+            Console.WriteLine("double1 : "+double1);
+
+        } 
+
+```
+** Program Sonucu **
+
+![tipDonusumleri](https://user-images.githubusercontent.com/86554799/147423121-4141ac26-c179-41ab-8f55-7760fe46b78f.jpg)
 
 
 
