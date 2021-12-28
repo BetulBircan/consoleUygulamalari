@@ -16,6 +16,11 @@ namespace if_else_if_ternary
                 Console.WriteLine("İyi Günler!");
             else  //koşul sağlanmadığı zaman çalışacağı bloktur.
                 Console.WriteLine("İyi Geceler!");
+
+            //Ternary ile koşul ifadesi yazma.
+            string sonuc = time <= 18 ? "İyi Günler!" : "İyi Geceler";
+            sonuc = time >= 6 && time < 11 ? "Günaydın" : time <= 18 ? "İyi Günler" : "İyi Geceler"; //iç içe if else gibi düşünebiliriz
+            Console.WriteLine(sonuc);
         }
     }
 }
