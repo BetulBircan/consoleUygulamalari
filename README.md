@@ -9,9 +9,9 @@ C# ta Uygulamalar adlı klasör oluşturuldu.Bundan sonra c# console projeleri b
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---İkinci uygulamamı da Uygulamalar/degiskenler klasörünün içerisinde oluşturdum. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama geliştirdim.
+--İkinci uygulamamı da **_Uygulamalar/degiskenler/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de değişken türlerinin nasıl tanımlandığına bakıp tür dönüşümleriyle ilgili uygulama geliştirdim.
 
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/degiskenler dosyasından ulaşabilirsiniz. 
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/degiskenler/Program.cs_** dosyasından ulaşabilirsiniz. 
 
 **İkinci Uygulamamın kodlarının bir kısmı:**
 
@@ -68,9 +68,9 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uy
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Üçüncü uygulamamı da Uygulamalar/operatörler klasörünün içerisinde oluşturdum. Bu projede de aritmetik,mantıksal ilişkisel,atama operatörlerin nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
+--Üçüncü uygulamamı da **_Uygulamalar/operatörler/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de aritmetik,mantıksal ilişkisel,atama operatörlerin nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
 
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/operatörler dosyasından ulaşabilirsiniz. 
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/operatörler/Program.cs_** dosyasından ulaşabilirsiniz. 
 
 **Üçüncü Uygulamamın kodlarının bir kısmı:**
 
@@ -109,9 +109,9 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uy
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Dördüncü uygulamamı da Uygulamalar/tipDonusumleri klasörünün içerisinde oluşturdum. Bu projede de veri tipi dönüşümlerinden implicit convertion(biliçli dönüşüm) ve explicit convertion(bilinçsiz dönüşüm)ın  nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
+--Dördüncü uygulamamı da **_Uygulamalar/tipDonusumleri/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de veri tipi dönüşümlerinden implicit convertion(biliçli dönüşüm) ve explicit convertion(bilinçsiz dönüşüm)ın  nasıl kullanıldığına bakıp  bunlarla ilgili uygulamalar geliştirdim.
 
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/tipDonusumleri dosyasından ulaşabilirsiniz. 
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/tipDonusumleri/Program.cs_** dosyasından ulaşabilirsiniz. 
 
 **Dördüncü Uygulamamın kodlarının bir kısmı:**
 
@@ -165,7 +165,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uy
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Beşinci uygulamamı da Uygulamalar/hataYonetimi klasörünün içerisinde oluşturdum. Bu projede de hata yönetiminden CompireTime ve Runtime hataların  nasıl oluştuğuna ve yönetildiğini inceleyip  bunlarla ilgili uygulamalar geliştirdim.İlk başta hata yönetimi nedir ne değidir bunu belirtmek isterim:
+--Beşinci uygulamamı da **_Uygulamalar/hataYonetimi/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de hata yönetiminden CompireTime ve Runtime hataların  nasıl oluştuğuna ve yönetildiğini inceleyip  bunlarla ilgili uygulamalar geliştirdim.İlk başta hata yönetimi nedir ne değidir bunu belirtmek isterim:
 
 **Hata Yönetimi:**
 
@@ -179,7 +179,7 @@ yani yakalıyor olmak  gerekiyor ki programı beklenmedik bir anda kırmasın ba
 
 Try catch blokları sayesinde uygulama içerisinde bir hata oluştuğunda belirtilen işlemler yaptırılabilir.
 
-Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uygulamalar/hataYonetimi dosyasından ulaşabilirsiniz. 
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/hataYonetimi/Program.cs_** dosyasından ulaşabilirsiniz. 
 
 **Beşinci Uygulamamın kodlarının bir kısmı:**
 
@@ -216,4 +216,46 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne Uy
 ![hatayonetimi1](https://user-images.githubusercontent.com/86554799/147514023-d0af584d-be18-4c84-9cba-07a9a71a9ce5.jpg)
 ![hatayonetimi2](https://user-images.githubusercontent.com/86554799/147514025-9ca55d46-5819-49b6-a92b-2959865c96bd.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Altıncı uygulamamı da **_Uygulamalar/if_else_if_ternary/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de karar yapılarından if, else-if ve ternary yapılarının  nasıl kullanıldığını  inceleyip  bunlarla ilgili uygulamalar geliştirdim.Bu uygulama sistem saatine göre kullanıcıyı karşılayan uygulamadır.
+
+Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/if_else_if_ternary_/Program.cs** dosyasından ulaşabilirsiniz.
+
+**Altıncı Uygulamamın kodlarının bir kısmı:**
+
+```
+            //İf-else yapısı
+            //şimdiki saati alıp gündüz mü gece mi kontrol eden programı yazma
+            int time = DateTime.Now.Hour;  //saati alma
+
+            if(time >=6 && time < 11)
+                Console.WriteLine("Günaydın!");
+            //Daha sonradan İyi Akşamlar kısmının da yazmasını istediğim için yazılan kodlar..
+            else if(time >=12 && time <=18)  //Koşul sağlanırsa çalışacağı blok.Tek satır olduğu için {} blokları yazmamıza gerek yok.
+                Console.WriteLine("İyi Günler!");
+            else if(time > 18 && time < 24)
+                Console.WriteLine("İyi Akşamlar!");
+                
+            //Ternary ile koşul ifadesi yazma.
+            string sonuc = time <= 18 ? "İyi Günler!" : "İyi Geceler";
+            sonuc = time >= 6 && time < 11 ? "Günaydın" : time <= 18 ? "İyi Günler" : "İyi Geceler"; //iç içe if else gibi düşünebiliriz
+            Console.WriteLine(sonuc);
+            
+ ```
+ 
+ **Program Sonucu**
+ 
+ ```
+ else if(time > 18 && time < 24)
+        Console.WriteLine("İyi Akşamlar!");  
+ 
+ ```   
+ 
+ Kodu eklenmeden önce:
+ 
+ ![ifelsesonuc](https://user-images.githubusercontent.com/86554799/147614889-d7c7a301-1882-49d3-8b1f-660be78e234c.jpg)
+ 
+ Eklendikten sonra:
+  
+![ifelsesonuc2](https://user-images.githubusercontent.com/86554799/147615008-0f16b23e-759f-4a8b-9c69-2954fe138709.jpg)
 
