@@ -12,8 +12,11 @@ namespace if_else_if_ternary
 
             if(time >=6 && time < 11)
                 Console.WriteLine("Günaydın!");
-            else if(time<=18)  //Koşul sağlanırsa çalışacağı blok.Tek satır olduğu için {} blokları yazmamıza gerek yok.
+            //Daha sonradan İyi Akşamlar kısmının da yazmasını istediğim için yazılan kodlar..
+            else if(time >=12 && time <=18)  //Koşul sağlanırsa çalışacağı blok.Tek satır olduğu için {} blokları yazmamıza gerek yok.
                 Console.WriteLine("İyi Günler!");
+            else if(time > 18 && time < 23)
+                Console.WriteLine("İyi Geceler");
             else  //koşul sağlanmadığı zaman çalışacağı bloktur.
                 Console.WriteLine("İyi Geceler!");
 
