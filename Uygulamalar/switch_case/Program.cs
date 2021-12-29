@@ -17,7 +17,7 @@ namespace switch_case
             break; case 1 de yapılacak iş belirlendikten sonra break ifadesi yazılır ve o durumdan çıkılır.
                  case 1:
                     Console.WriteLine("Ocak Ayındasınız.");
-                    break;  BU ŞWKİLDE YAZILIR VE DİĞER AYLAR DA BU ŞEKİLDE KONTROL EDİLİR.HİÇBİRİ UYMAZSA DEFAULT DA ÇIKIŞ YAPILIR.
+                    break;  BU ŞEKİLDE YAZILIR VE DİĞER AYLAR DA BU ŞEKİLDE KONTROL EDİLİR.HİÇBİRİ UYMAZSA DEFAULT DA ÇIKIŞ YAPILIR.
             */
 
             //kullanıcının sistemdeki ayına göre hangi ayda olduğunu gösteren program
@@ -62,7 +62,7 @@ namespace switch_case
                     Console.WriteLine("Aralık Ayındasınız.");
                     break;
                 
-                default:  // hiçbir case e uymadığı takdirde yapılacak işlemi ifade eder.break  ifadesi ile de çıkış yapılabilir.default kısmı olmak zorundadır.
+                default:  // hiçbir case e uymadığı takdirde yapılacak işlemi ifade eder.break  ifadesi ile de çıkış yapılabilir.default kısmı olmak zorunda değildir..
                     break;
             }
 
