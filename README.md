@@ -259,3 +259,82 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
   
 ![ifelsesonuc2](https://user-images.githubusercontent.com/86554799/147615008-0f16b23e-759f-4a8b-9c69-2954fe138709.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Yedinci uygulamamı da **_Uygulamalar/switch_case/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de karar yapılarından switch-case yapısının nasıl kullanıldığını  inceleyip  bununla ilgili uygulamalar geliştirdim.
+
+-Kullanıcının bilgisayardaki sistem ayını DateTime.Now.Month; ile int değerini alıp daha sonra da hangi ayda olduğunu ve de hangi mevsimde olduğunustring ile ekrana gösteren program.Ben ilk başta hangi ayda olduğunu gösteren kodu yazdım.Buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/switch_case/Program.cs** dosyasından ulaşabilirsiniz.
+
+**Yedinci Uygulama/1.örnek uygulama kodlarının bir kısmı:**
+
+```
+  
+            //switch-case yapısı: Birden fazla koşulda aynı ifadenin çalışması gereken durumlarda daha temiz, daha okunabilir bir kod ifadesi sağlar.
+            
+            /*switch (expression)--->Expression yani kontrol etmek istediğimiz koşulu yazarız.biz ay üzerinden kontrol etmek istiyoruz.
+                                O yüzden parantez içine month yazarız.
+            case 1 : sağlanacağı koşul yazılır.örneğin; month 1 değerindeyse şunu yap gibi.case in yanına yazılan ifade switch için içerisinde
+                     yazılan değişkenin veri tipiyle aynı olmalıdır. month değişkeni integer olduğu için case in yanında ki değer de integer
+                     olacaktır.
+            break; case 1 de yapılacak iş belirlendikten sonra break ifadesi yazılır ve o durumdan çıkılır.
+                 case 1:
+                    Console.WriteLine("Ocak Ayındasınız.");
+                    break;  BU ŞWKİLDE YAZILIR VE DİĞER AYLAR DA BU ŞEKİLDE KONTROL EDİLİR.HİÇBİRİ UYMAZSA DEFAULT DA ÇIKIŞ YAPILIR.
+            */
+
+            //kullanıcının sistemdeki ayına göre hangi ayda olduğunu gösteren program
+            int month = DateTime.Now.Month;
+
+            switch (month)
+            {
+                case 1:
+                    Console.WriteLine("Ocak Ayındasınız.");
+                    break;
+                case 2:
+                    Console.WriteLine("Şubat Ayındasınız.");
+                    break;
+                case 3:
+                    Console.WriteLine("Mart Ayındasınız.");
+                    break;
+                case 4:
+                    Console.WriteLine("Nisan Ayındasınız.");
+                    break;
+```
+
+**Programın Sonucu:**
+
+![switchcasesonucilk](https://user-images.githubusercontent.com/86554799/147709811-55b8265d-43d2-4e21-a037-d315f555131a.jpg)
+
+-Daha sonra da Kullanıcının bilgisayardaki sistem ayını DateTime.Now.Month; ile int değerini alıp daha sonra da hangi mevsimde olduğunu string ile ekrana gösteren programın kodlarını yazdım.Buraya da diğer kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/switch_case/Program.cs** dosyasından ulaşabilirsiniz.
+
+**Yedinci Uygulama/2.örnek uygulama kodlarının bir kısmı:**
+
+```
+ /*Eğer birden fazla case de aynı işlemi yapmak istersek birden fazla case ifadesini tek bir kod bloğunu çalıştırabilecek şekilde yazabiliriz.
+                Örneğin : case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("Kış Mevsimindesiniz.");
+                    break; gibi.
+            */
+            
+            //Kullanıcının sistemdeki ayına göre hangi mevsimde olduğunu gösteren program.
+            switch (month)
+            {
+                case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("Kış Mevsimindesiniz.");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    Console.WriteLine("İlkbahar Mevsimindesiniz.");
+                    break;
+```
+
+**Programın Sonucu**
+
+![switchcasesonuc](https://user-images.githubusercontent.com/86554799/147710191-cb7f5ed1-8625-4427-a15a-35e96fd24ea3.jpg)
+
+
