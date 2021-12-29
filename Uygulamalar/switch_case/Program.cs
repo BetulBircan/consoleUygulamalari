@@ -65,6 +65,28 @@ namespace switch_case
                 default:  // hiçbir case e uymadığı takdirde yapılacak işlemi ifade eder.break  ifadesi ile de çıkış yapılabilir.default kısmı olmak zorundadır.
                     break;
             }
+
+            
+            /*Eğer birden fazla case de aynı işlemi yapmak istersek birden fazla case ifadesini tek bir kod bloğunu çalıştırabilecek şekilde yazabiliriz.
+                Örneğin : case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("Kış Mevsimindesiniz.");
+                    break; gibi.
+            */
+            
+            //Kullanıcının sistemdeki ayına göre hangi mevsimde olduğunu gösteren program.
+            switch (month)
+            {
+                case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("Kış Mevsimindesiniz.");
+                    break;
+                
+                default:
+                    break;
+            }
         }
     }
 }
