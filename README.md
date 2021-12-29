@@ -263,6 +263,8 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 
 --Yedinci uygulamamı da **_Uygulamalar/switch_case/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de karar yapılarından switch-case yapısının nasıl kullanıldığını  inceleyip  bununla ilgili uygulamalar geliştirdim.
 
+Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. Switch-Case ifadeleri yapabileceğiniz her şeyi if-else blokları ile de yapabiliriz. Bir ifade üç veya daha fazla koşula göre ayrıştırıldığında genel olarak if-else'e alternatif olarak switch case kullanılır.
+
 -Kullanıcının bilgisayardaki sistem ayını DateTime.Now.Month; ile int değerini alıp daha sonra da hangi ayda olduğunu ve de hangi mevsimde olduğunustring ile ekrana gösteren program.Ben ilk başta hangi ayda olduğunu gösteren kodu yazdım.Buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/switch_case/Program.cs** dosyasından ulaşabilirsiniz.
 
 **Yedinci Uygulama/1.örnek uygulama kodlarının bir kısmı:**
