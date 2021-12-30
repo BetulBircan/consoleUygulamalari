@@ -41,6 +41,14 @@ namespace donguler_forloop
                     break;
                 Console.WriteLine(i);
             }
+
+            //contine ile ilgili örnek:
+            for (int i = 1; i < 10; i++)
+            {
+                if(i==4)
+                    continue;
+                Console.WriteLine(i);
+            }
         }
     }
 }
