@@ -17,6 +17,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 
 ```
  Console.WriteLine("");
+            //Tam Sayılar
             byte b = 5;   //1 byte-0 ile 256
             sbyte c = 5;  //1 byte -128---+127
 
@@ -263,9 +264,9 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 
 --Yedinci uygulamamı da **_Uygulamalar/switch_case/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de karar yapılarından switch-case yapısının nasıl kullanıldığını  inceleyip  bununla ilgili uygulamalar geliştirdim.
 
-Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. Switch-Case ifadeleri yapabileceğiniz her şeyi if-else blokları ile de yapabiliriz. Bir ifade üç veya daha fazla koşula göre ayrıştırıldığında genel olarak if-else'e alternatif olarak switch case kullanılır.
+Tanım:Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. Switch-Case ifadeleri yapabileceğiniz her şeyi if-else blokları ile de yapabiliriz. Bir ifade üç veya daha fazla koşula göre ayrıştırıldığında genel olarak if-else'e alternatif olarak switch case kullanılır.
 
--Kullanıcının bilgisayardaki sistem ayını DateTime.Now.Month; ile int değerini alıp daha sonra da hangi ayda olduğunu ve de hangi mevsimde olduğunustring ile ekrana gösteren program.Ben ilk başta hangi ayda olduğunu gösteren kodu yazdım.Buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/switch_case/Program.cs** dosyasından ulaşabilirsiniz.
+-**İlk Örnek:** Kullanıcının bilgisayardaki sistem ayını DateTime.Now.Month; ile int değerini alıp daha sonra da hangi ayda olduğunu ve de hangi mevsimde olduğunustring ile ekrana gösteren program.Ben ilk başta hangi ayda olduğunu gösteren kodu yazdım.Buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **_Uygulamalar/switch_case/Program.cs** dosyasından ulaşabilirsiniz.
 
 **Yedinci Uygulama/1.örnek uygulama kodlarının bir kısmı:**
 
@@ -338,5 +339,92 @@ Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. Switch-C
 **Programın Sonucu**
 
 ![switchcasesonuc](https://user-images.githubusercontent.com/86554799/147710191-cb7f5ed1-8625-4427-a15a-35e96fd24ea3.jpg)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Sekizinci uygulamamı da **_Uygulamalar/donguler_forloop/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de döngü yapılarından for döngüsünün nasıl kullanıldığını  inceleyip  bununla ilgili uygulamalar geliştirdim.
+
+Tanım:Belli bir kod bloğunun belli şartlar altında,şartlara bağlı kalarak birden fazla defa çalışmasını istiyorsak döngülerden yararlanırız.Bunlardan biri de for loop(döngü) kullanılır.For döngüsünün kullanımı: 
+
+            for(başlangıç noktası;koşul;artım)
+
+-**İlk Örnek:** Ekrandan girilen sayıya kadar olan tek sayıları ekrana yazdıran program.
+
+**Program Kodları**(Kısa olduğu için direk kodları olduğu gibi burada gösterdim)
+
+```
+Console.Write("Lütfen Bir Sayı Giriniz: ");
+            int sayac = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= sayac; i++)
+            {
+                if(i%2 == 1)
+                    Console.WriteLine(i);
+            }
+```
+**Program Sonucu**
+
+![forloopsonuc1](https://user-images.githubusercontent.com/86554799/147789168-af4a87fe-9970-4455-8977-7a57962f7183.jpg)
+
+-**İkinci Örnek:** 1 ile 1000 arasındaki tek ve çift sayıların kendi içlerindeki toplamlarını ekrana yazdıran program.
+
+**Program Kodları**
+
+```
+int tekToplam = 0, ciftToplam = 0;
+            for (int i = 1; i <= 1000; i++)
+            {
+                if(i%2 == 1)
+                    tekToplam += i;  //tekToplam = tekToplam + i;  
+                else
+                    ciftToplam += i; //ciftToplam = tekToplam + i;
+            }
+            Console.WriteLine("Tek Sayıların Toplamı: "+tekToplam);
+            Console.WriteLine("Çift Sayıların Toplamı: "+ciftToplam);
+```
+
+**Program Sonucu**
+
+![forloopsonuc2](https://user-images.githubusercontent.com/86554799/147789184-03511610-2680-4057-b400-eed20946298b.jpg)
+
+Döngülerde kullanılabilinen iki özel tanım vardır. Bunlar "break" ve "continue" dir.
+
+**Break:** Eğer döngü içerisinde bir case e bağlı olarak döngüden çıkmak istersek yani döngüyü sonlandırmak istersek break ifadesini kullanırız
+
+**Continue:** Eğer bir şarta bağlı olarak  mevcut döngünün o kısmın çalışmasını istemediğimizde o kısmı atlayıp döngüye devam etmek istersek continue ifadesini kullanırız.
+
+-**Üçüncü Örnek:** 1 den 10 a kadar sayılar için break ve continue ile gösterimi:
+
+Break için:
+
+```
+ //break ile ilgili örnek:
+            for (int i = 1; i < 10; i++)
+            {
+                if(i==4)
+                    break;
+                Console.WriteLine(i);
+            }
+```
+
+**Program Sonucu**
+
+![forloopsonuc3](https://user-images.githubusercontent.com/86554799/147789217-9126d566-c866-4913-8008-ca53a390fb15.jpg)
+
+Continue için:
+
+```
+//contine ile ilgili örnek:
+            for (int i = 1; i < 10; i++)
+            {
+                if(i==4)
+                    continue;
+                Console.WriteLine(i);
+            }
+```
+
+**Program Sonucu**
+
+![forloopsonuc4](https://user-images.githubusercontent.com/86554799/147789234-291d5697-a21f-4ddb-a101-fac17aa80032.jpg)
+
 
 
