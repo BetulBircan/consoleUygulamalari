@@ -11,6 +11,13 @@ namespace donguler_forloop
             //for(başlangıç noktası;koşul;artım)
 
             //Ekrandan girilen sayıya kadar olan tek sayıları ekrana yazdır.
+            Console.Write("Lütfen Bir Sayı Giriniz: ");
+            int sayac = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= sayac; i++)
+            {
+                if(i%2 == 1)
+                    Console.WriteLine(i);
+            }
         }
     }
 }
