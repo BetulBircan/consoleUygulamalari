@@ -30,6 +30,9 @@ namespace donguler_forloop
             }
             Console.WriteLine("Tek Sayıların Toplamı: "+tekToplam);
             Console.WriteLine("Çift Sayıların Toplamı: "+ciftToplam);
+
+            //break:Eğer döngü içerisinde bir case e bağlı olarak döngüden çıkmak istersek yani döngüyü sonlandırmak istersek break ifadesini kullanırız
+            //continue:Eğer bir şarta bağlı olarak  mevcut döngünün o kısmın çalışmasını istemediğimizde o kısmı atlayıp döngüye devam etmek istersek continue ifadesini kullanırız.
         }
     }
 }
