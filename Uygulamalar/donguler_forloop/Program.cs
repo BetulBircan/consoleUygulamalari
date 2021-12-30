@@ -33,6 +33,14 @@ namespace donguler_forloop
 
             //break:Eğer döngü içerisinde bir case e bağlı olarak döngüden çıkmak istersek yani döngüyü sonlandırmak istersek break ifadesini kullanırız
             //continue:Eğer bir şarta bağlı olarak  mevcut döngünün o kısmın çalışmasını istemediğimizde o kısmı atlayıp döngüye devam etmek istersek continue ifadesini kullanırız.
+
+            //break ile ilgili örnek:
+            for (int i = 1; i < 10; i++)
+            {
+                if(i==4)
+                    break;
+                Console.WriteLine(i);
+            }
         }
     }
 }
