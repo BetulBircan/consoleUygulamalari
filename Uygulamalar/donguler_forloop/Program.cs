@@ -18,6 +18,18 @@ namespace donguler_forloop
                 if(i%2 == 1)
                     Console.WriteLine(i);
             }
+
+            //1 ile 1000 arasındaki tek ve çift sayıların kendi içlerindeki toplamlarını ekrana yazdır.
+            int tekToplam = 0, ciftToplam = 0;
+            for (int i = 1; i <= 1000; i++)
+            {
+                if(i%2 == 1)
+                    tekToplam += i;  //tekToplam = tekToplam + i;  
+                else
+                    ciftToplam += i; //ciftToplam = tekToplam + i;
+            }
+            Console.WriteLine("Tek Sayıların Toplamı: "+tekToplam);
+            Console.WriteLine("Çift Sayıların Toplamı: "+ciftToplam);
         }
     }
 }
