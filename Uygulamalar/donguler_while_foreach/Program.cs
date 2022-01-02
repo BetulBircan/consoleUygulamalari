@@ -6,7 +6,14 @@ namespace donguler_while_foreach
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //While Kullanımı:while(kosul){çalışacak kodlar}
+            //Birden Başlayarak console dan girilen sayıya kadar(sayı dahil) ortalama hesaplayıp console a yadıran program.
+            Console.Write("Lütfen Sayı Giriniz: ");
+            int sayi = int.Parse(Console.ReadLine());
+            int sayac = 1; //1 den girilen sayıya kadar dediği için
+            int toplam = 0;
+            
+            
         }
     }
 }
