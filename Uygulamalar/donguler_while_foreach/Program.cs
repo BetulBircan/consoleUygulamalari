@@ -28,6 +28,13 @@ namespace donguler_while_foreach
                  character++;
             }
             
+             // //Foreach--->Dizilerde kullanılır.Dizinin içindeki elemanlar arasında döner.
+            Console.WriteLine("*****Foreach*****");
+            string[]arabalar = {"BMV", "Ford", "Toyota", "Nissan"};  //dizi tanımlaması:veri tipi[]diziadi={değerler}
+            foreach (var araba in arabalar) //var ile veritipi belirlemeye gerek kalmadan her veri tipindeki elemanları kontrol edebilir foreach.var obje türünden türemiştir.
+            {
+                Console.WriteLine(araba);
+            }
             
         }
     }
