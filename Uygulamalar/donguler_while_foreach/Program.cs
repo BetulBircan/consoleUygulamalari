@@ -19,6 +19,14 @@ namespace donguler_while_foreach
                  sayac++; //sayac++ demezsek sonsuz döngü olur.
             }
             Console.WriteLine("0rtalaması:" + toplam/sayi);
+
+             //"a" dan "z" ye kadar olan tüm harfleri console a  yazdır.
+            char character = 'a';
+            while (character < 'z')
+            {
+                 Console.Write(character);
+                 character++;
+            }
             
             
         }
