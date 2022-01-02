@@ -65,7 +65,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 
 **Program Sonucu:**
 
-![degiskensonuc](https://user-images.githubusercontent.com/86554799/147374383-6711a8a7-9040-4ae4-97c9-ba7fc88a2fc7.jpg)
+![degiskensonuc](https://user-images.githubusercontent.com/86554799/147878199-bf1d083d-684a-41ff-b09b-cc1d1d16658b.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -162,7 +162,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 ```
 **Program Sonucu**
 
-![tipDonusumleri](https://user-images.githubusercontent.com/86554799/147423121-4141ac26-c179-41ab-8f55-7760fe46b78f.jpg)
+![tipDonusumleri](https://user-images.githubusercontent.com/86554799/147878260-fef9d023-b3e4-4b08-9dac-9e9b555da05e.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -384,7 +384,7 @@ int tekToplam = 0, ciftToplam = 0;
 
 **Program Sonucu**
 
-![forloopsonuc2](https://user-images.githubusercontent.com/86554799/147789184-03511610-2680-4057-b400-eed20946298b.jpg)
+![forloopsonuc2](https://user-images.githubusercontent.com/86554799/147877131-20809f70-1dd2-46a7-af12-181fcb0f761e.jpg)
 
 Döngülerde kullanılabilinen iki özel tanım vardır. Bunlar "break" ve "continue" dir.
 
@@ -424,7 +424,83 @@ Continue için:
 
 **Program Sonucu**
 
-![forloopsonuc4](https://user-images.githubusercontent.com/86554799/147789234-291d5697-a21f-4ddb-a101-fac17aa80032.jpg)
+![forloopsonuc4](https://user-images.githubusercontent.com/86554799/147877093-061440d3-bc1c-44bf-835e-ae54d7df20bd.jpg)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Dokuzuncu uygulamamı da **_Uygulamalar/donguler_while_foreach/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de döngü yapılarından while ve foreach döngüsünün nasıl kullanıldığını  inceleyip  bununla ilgili uygulamalar geliştirdim.
+
+While Tanım:Belli bir kod bloğunun belli şartlar altında,şartlara bağlı kalarak birden fazla defa çalışmasını istiyorsak döngülerden yararlanırız.Bunlardan biri de while loop(döngü) kullanılır.While döngüsünün kullanımı: 
+
+            while(koşul)
+            {
+               çalışacak ifadeler
+            }
+
+-**İlk Örnek:** 1 den  Başlayarak console dan girilen sayıya kadar(sayı dahil) ortalama hesaplayıp console a yazdıran program.
+
+**Program Kodları**(Kısa olduğu için direk kodları olduğu gibi burada gösterdim)
+
+```
+            //While Kullanımı:while(kosul){çalışacak kodlar}
+            //Birden Başlayarak console dan girilen sayıya kadar(sayı dahil) ortalama hesaplayıp console a yadıran program.
+            Console.Write("Lütfen Sayı Giriniz: ");
+            int sayi = int.Parse(Console.ReadLine());
+            int sayac = 1; //1 den girilen sayıya kadar dediği için
+            int toplam = 0;
+
+            while (sayac <= sayi) //buraya yazdığımız ifade true olduğu sürece kod blokları çalışacaktır.Döngünün kaç kere çalışacağını  bu koşul belirler.
+            {
+                 toplam += sayac;
+                 sayac++; //sayac++ demezsek sonsuz döngü olur.
+            }
+            Console.WriteLine("0rtalaması:" + toplam/sayi);
+
+```
+
+**Program Sonucu**
+
+![while1](https://user-images.githubusercontent.com/86554799/147877507-ac63d6d5-c806-40ba-bc78-e91847d52afd.jpg)
+
+-**İkinci Örnek:** "a" dan "z" ye kadar olan tüm harfleri console a  yazdıran program.
+
+**Program Kodları **
+
+```
+char character = 'a';
+            while (character < 'z')
+            {
+                 Console.Write(character);
+                 character++;
+            }
+```
+
+**Program Sonucu**
+
+![while2](https://user-images.githubusercontent.com/86554799/147877811-e31b8966-1c81-4267-85c1-9b7a198aeac0.jpg)
+
+-**Üçüncü Örnek:** Foreach ile araba markalarını ekrana yazdıran program.(Foreach dizilerde kullanılır.Dizinin içindeki elemanlar arasında döner)
+
+```
+            Console.WriteLine("*****Foreach*****");
+            string[]arabalar = {"BMV", "Ford", "Toyota", "Nissan"};  //dizi tanımlaması:veri tipi[]diziadi={değerler}
+            foreach (var araba in arabalar) //var ile veritipi belirlemeye gerek kalmadan her veri tipindeki elemanları kontrol edebilir foreach.var obje türünden türemiştir.
+            {
+                Console.WriteLine(araba);
+            }
+```
+
+**Program Sonucu**
+
+![foreach](https://user-images.githubusercontent.com/86554799/147878063-6cb4bad9-9804-4ae0-95dc-471cfc66ab49.jpg)
+
+
+
+
+
+
+
+
 
 
 
