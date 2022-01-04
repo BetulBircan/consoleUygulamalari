@@ -16,7 +16,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 **İkinci Uygulamamın kodlarının bir kısmı:**
 
 ```
- Console.WriteLine("");
+            Console.WriteLine("");
             //Tam Sayılar
             byte b = 5;   //1 byte-0 ile 256
             sbyte c = 5;  //1 byte -128---+127
@@ -40,7 +40,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 ```
 
 ```
-//Değişken Dönüşümleri
+            //Değişken Dönüşümleri
             //int ten stringe dönüştürme
             string s20 = "20";
             int i20 = 20;
@@ -76,7 +76,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 **Üçüncü Uygulamamın kodlarının bir kısmı:**
 
 ```
- Console.WriteLine("***********Atama ve İşlemli Atama Operatörleri**********");
+            Console.WriteLine("***********Atama ve İşlemli Atama Operatörleri**********");
             //Atama ve İşlemli Atama
             int x = 3;
             int y = 3;
@@ -118,8 +118,8 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
 
 ```
 
-//Tip Dönüşümleri
-           //İmplicit Conversion (Bilinçsiz Dönüşüm): Düşük kapasiteli bir değişkeni kendinden daha yüksek kapasiteli başka bir değişkene atanma işlemi.sistem kendisi otomotik   dönüştürür bizim parse convert diye mmetod yazmamıza gerek kalmaz.
+            //Tip Dönüşümleri
+           //İmplicit Conversion (Bilinçsiz Dönüşüm): Düşük kapasiteli bir değişkeni kendinden daha yüksek kapasiteli başka bir değişkene atanma işlemi.sistem kendisi otomotik              dönüştürür bizim parse convert diye mmetod yazmamıza gerek kalmaz.
            Console.WriteLine("*******İmplicit Conversion*******");
            byte a = 5;
            sbyte b = 30;
@@ -128,7 +128,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
            int d = a+b+c;
            Console.WriteLine("d : "+d);
            
-           //Explicit Conversion (Bilinçli Dönüşüm):c# ın kendi kendine yapamadığı tür dönüşümleridir. Bir şekilde convert ve parse ı ve de ToString() i kulanarak buradaki dönüşümü derleyiciye belirtmek gerekiyor.
+           //Explicit Conversion (Bilinçli Dönüşüm):c# ın kendi kendine yapamadığı tür dönüşümleridir. Bir şekilde convert ve parse ı ve de ToString() i kulanarak buradaki        dönüşümü derleyiciye belirtmek gerekiyor.
            Console.WriteLine("*******Explicit Conversion*******");
            int x = 4;
            byte y = (byte)x; //byte y = (byte)x -->sağdaki değişkeni parantez içerisindeki türe dönüştürür.
@@ -140,7 +140,7 @@ Ben buraya kodların bir kısmını paylaşacağım. Detaylı kod bölümüne **
            string yy = xx.ToString();
            Console.WriteLine("yy : "+yy);
            
-            //Parse --->Not:Bir değişkeni aynı blokta aynı isimle tanımlayamayız fakat farklı blokta tanımlayabiliriz.Değişken adları tükendiği düşünüldüğü için ayrı metod tanımlandı.
+            //Parse --->Not:Bir değişkeni aynı blokta aynı isimle tanımlayamayız fakat farklı blokta tanımlayabiliriz.Değişken adları tükendiği düşünüldüğü için ayrı metod     tanımlandı.
             Console.WriteLine("*******Parse*******"); 
             ParseMethod();
 
@@ -313,7 +313,7 @@ Tanım:Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. S
 **Yedinci Uygulama/2.örnek uygulama kodlarının bir kısmı:**
 
 ```
- /*Eğer birden fazla case de aynı işlemi yapmak istersek birden fazla case ifadesini tek bir kod bloğunu çalıştırabilecek şekilde yazabiliriz.
+           /*Eğer birden fazla case de aynı işlemi yapmak istersek birden fazla case ifadesini tek bir kod bloğunu çalıştırabilecek şekilde yazabiliriz.
                 Örneğin : case 12:
                 case 1:
                 case 2:
@@ -353,7 +353,7 @@ Tanım:Belli bir kod bloğunun belli şartlar altında,şartlara bağlı kalarak
 **Program Kodları**(Kısa olduğu için direk kodları olduğu gibi burada gösterdim)
 
 ```
-Console.Write("Lütfen Bir Sayı Giriniz: ");
+            Console.Write("Lütfen Bir Sayı Giriniz: ");
             int sayac = int.Parse(Console.ReadLine());
             for (int i = 0; i <= sayac; i++)
             {
@@ -370,7 +370,7 @@ Console.Write("Lütfen Bir Sayı Giriniz: ");
 **Program Kodları**
 
 ```
-int tekToplam = 0, ciftToplam = 0;
+            int tekToplam = 0, ciftToplam = 0;
             for (int i = 1; i <= 1000; i++)
             {
                 if(i%2 == 1)
@@ -397,7 +397,7 @@ Döngülerde kullanılabilinen iki özel tanım vardır. Bunlar "break" ve "cont
 Break için:
 
 ```
- //break ile ilgili örnek:
+            //break ile ilgili örnek:
             for (int i = 1; i < 10; i++)
             {
                 if(i==4)
@@ -413,7 +413,7 @@ Break için:
 Continue için:
 
 ```
-//contine ile ilgili örnek:
+            //contine ile ilgili örnek:
             for (int i = 1; i < 10; i++)
             {
                 if(i==4)
@@ -467,7 +467,7 @@ While Tanım:Belli bir kod bloğunun belli şartlar altında,şartlara bağlı k
 **Program Kodları **
 
 ```
-char character = 'a';
+            char character = 'a';
             while (character < 'z')
             {
                  Console.Write(character);
@@ -493,6 +493,79 @@ char character = 'a';
 **Program Sonucu**
 
 ![foreach](https://user-images.githubusercontent.com/86554799/147878063-6cb4bad9-9804-4ae0-95dc-471cfc66ab49.jpg)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Onuncu uygulamamı da **_Uygulamalar/diziler/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede de dizi tanımlama, dizi elemanlara erişme ve dizilerin döngülerde kulllanımını  inceleyip  bununla ilgili uygulamalar geliştirdim.
+
+Dizi Tanım: Aynı tipteki verileri bellekte yan yana saklamak istediğimizde dizilerden faydalanırız.Değişkenler kullanılarak karmaşık şekilde çözülebilecek problemler diziler yardımıyla çok daha kolay bir şekilde çözülebilir.Diziler 0.indisten başlar.Yani 5 elemanlı bir dizi oluşturuyorsak o dizinin son elemanına ulaşmak için 4.indisten ulaşabiliriz.Dizi tanımlaması:
+
+           veri_tipi[] dizi_adi = new veri_tipi[boyut] 
+           dizi_adi = {elemanlar}
+           
+-**İlk Örnek:** Dizileri tanımlama ve dizinin elemanlarına erişim ile ilgili örnekler:
+
+**Program Kodları**
+
+```
+            //Dizi Tanımlaması:
+            string[] renkler = new string[5];  //Adı renkler olan 5 elemanlı string tipinde bir dizi tanımlanmış oldu.Burada dizinin boyutu belli elemanı belli değildir.
+            
+            string[] hayvanlar = {"Kedi", "Köpek", "Kuş", "Maymun"};  //Adı hayvanlar olan 4 elemanlı string tipinde bir dizi.Dizinin elemanları da bellidir,boyutu da.
+
+            int[] dizi;  //Burada boyut da elemanlar da belli değildir.
+            dizi = new int[4];  //Daha sonra da kaç elemanlı olacağını burada olduğu gibi belirtebiliriz.
+
+            //Dizilere Değer Atama ve Erişim
+            renkler[0] = "Mavi";  //renkler dizisinin 0.indisindeki yani 1.elemanına "Mavi" elemanını atamış olduk.
+            dizi[3] = 10;         //dizi adlı dizinin 3.indisindeki yani 4.elemanına 10 değerini atamış olduk.
+            
+            Console.WriteLine(hayvanlar[1]);  //hayvanlar dizisinin 1.indisindeki yani 2.elemanına erişmiş olduk ve ekrana yazdırdık.
+            Console.WriteLine(dizi[3]);       //dizi adlı dizinin 4.elemanına erişmiş olduk ve ekrana yazdırdık.
+            Console.WriteLine(renkler[0]);    //renkler dizisinin 0.indisindeki yani 1.elemanına erişmiş olduk ve ekrana yazdırdık.
+
+```
+
+**Program Sonucu**
+
+![diziler1 sonuc](https://user-images.githubusercontent.com/86554799/148109471-6fe0f74d-db6c-4cc0-86ea-6a7d1093c2ea.jpg)
+
+-**İkinci Örnek:** Klavyeden girilen n tane sayının ortalamasını hesaplayan program.
+
+**Program Kodları**
+
+```
+            //Döngülerle dizi kullanımı
+            //Klavyeden girilen n tane sayının ortalamasını hesaplayan program.
+            Console.Write("Lütfen Dizinin Eleman Sayısını Giriniz: ");
+            int diziUzunluğu = int.Parse(Console.ReadLine());
+            int[] sayiDizisi = new int[diziUzunluğu];   //dizi kullanıcının girdiği sayı kadar elemanlı olacak şekilde tanımlandı.
+
+            //dizinin elemanlarını da kullancı girsin istiyoruz.Bunu da for döngüsü yardımıyla oluşturuyoruz.
+            for (int i = 0; i < diziUzunluğu; i++)
+            {
+                Console.Write("Lütfen {0}. sayısını giriniz: ",i+1);
+                sayiDizisi[i]=int.Parse(Console.ReadLine());
+            }
+
+            //dizide bulunan sayıları toplayıp ortalamasını almak için de foreach döngüsünden faydalanıyoruz.
+            int toplam = 0;
+            foreach (var sayi in sayiDizisi)
+                toplam += sayi;
+            Console.WriteLine("Ortalaması: " + toplam/diziUzunluğu);
+            
+```
+
+**Program Sonucu**
+
+![diziler2 sonuc](https://user-images.githubusercontent.com/86554799/148109838-33eabf7e-30b2-438f-9372-53f3a456319c.jpg)
+
+
+
+           
+
+
+
 
 
 
