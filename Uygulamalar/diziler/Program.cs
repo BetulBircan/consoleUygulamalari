@@ -17,6 +17,15 @@ namespace diziler
 
             int[] dizi;  //Burada boyut da elemanlar da belli değildir.
             dizi = new int[4];  //Daha sonra da kaç elemanlı olacağını burada olduğu gibi belirtebiliriz.
+
+            //Dizilere Değer Atama ve Erişim
+            renkler[0] = "Mavi";  //renkler dizisinin 0.indisindeki yani 1.elemanına "Mavi" elemanını atamış olduk.
+            dizi[3] = 10;         //dizi adlı dizinin 3.indisindeki yani 4.elemanına 10 değerini atamış olduk.
+            
+            Console.WriteLine(hayvanlar[1]);  //hayvanlar dizisinin 1.indisindeki yani 2.elemanına erişmiş olduk ve ekrana yazdırdık.
+            Console.WriteLine(dizi[3]);       //dizi adlı dizinin 4.elemanına erişmiş olduk ve ekrana yazdırdık.
+            Console.WriteLine(renkler[0]);    //renkler dizisinin 0.indisindeki yani 1.elemanına erişmiş olduk ve ekrana yazdırdık.
+
         }
     }
 }
