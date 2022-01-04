@@ -39,6 +39,12 @@ namespace diziler
                 sayiDizisi[i]=int.Parse(Console.ReadLine());
             }
 
+            //dizide bulunan sayıları toplayıp ortalamasını almak için de foreach döngüsünden faydalanıyoruz.
+            int toplam = 0;
+            foreach (var sayi in sayiDizisi)
+                toplam += sayi;
+            Console.WriteLine("Ortalaması: " + toplam/diziUzunluğu);
+
         }
     }
 }
