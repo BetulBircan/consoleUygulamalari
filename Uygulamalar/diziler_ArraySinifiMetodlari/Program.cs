@@ -20,6 +20,13 @@ namespace diziler_ArraySinifiMetodlari
             foreach (var sayi in sayiDizisi)
                 Console.WriteLine(sayi);
 
+            //Clear:Dizi içerisinde verdiğimiz indexten başlayarak verdiğimiz eleman sayısı kadar değeri 0 lar.yani varsayılan değerini döndürür. int türünde varsayılan değer 0 dır.
+            
+            Console.WriteLine("******Array Clear******");
+            Array.Clear(sayiDizisi,2,2);  //sayiDizisi elemanlarını kullanarak 2.indexten itibaren 2 tane elemanı 0'lar.
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
         }
     }
 }
