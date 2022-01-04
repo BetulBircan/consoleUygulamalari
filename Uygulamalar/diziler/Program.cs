@@ -32,6 +32,13 @@ namespace diziler
             int diziUzunluğu = int.Parse(Console.ReadLine());
             int[] sayiDizisi = new int[diziUzunluğu];   //dizi kullanıcının girdiği sayı kadar elemanlı olacak şekilde tanımlandı.
 
+            //dizinin elemanlarını da kullanıcı girsin istiyoruz.Bunu da for döngüsü yardımıyla oluşturuyoruz.
+            for (int i = 0; i < diziUzunluğu; i++)
+            {
+                Console.Write("Lütfen {0}. sayısını giriniz: ",i+1);
+                sayiDizisi[i]=int.Parse(Console.ReadLine());
+            }
+
         }
     }
 }
