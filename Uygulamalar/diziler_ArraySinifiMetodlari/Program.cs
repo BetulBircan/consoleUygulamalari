@@ -34,6 +34,10 @@ namespace diziler_ArraySinifiMetodlari
             foreach (var sayi in sayiDizisi)
                 Console.WriteLine(sayi);
 
+            //IndexOf:Verdiğiniz dizi üzerinde verdiğiniz elemanın eğer içerisinde varsa index numarasını döner.
+            Console.WriteLine("******Array IndexOf******");
+            Console.WriteLine(Array.IndexOf(sayiDizisi,23));
+
         }
     }
 }
