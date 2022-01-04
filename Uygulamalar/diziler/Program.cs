@@ -26,6 +26,12 @@ namespace diziler
             Console.WriteLine(dizi[3]);       //dizi adlı dizinin 4.elemanına erişmiş olduk ve ekrana yazdırdık.
             Console.WriteLine(renkler[0]);    //renkler dizisinin 0.indisindeki yani 1.elemanına erişmiş olduk ve ekrana yazdırdık.
 
+            //Döngülerle dizi kullanımı
+            //Klavyeden girilen n tane sayının ortalamasını hesaplayan program.
+            Console.Write("Lütfen Dizinin Eleman Sayısını Giriniz: ");
+            int diziUzunluğu = int.Parse(Console.ReadLine());
+            int[] sayiDizisi = new int[diziUzunluğu];   //dizi kullanıcının girdiği sayı kadar elemanlı olacak şekilde tanımlandı.
+
         }
     }
 }
