@@ -27,6 +27,13 @@ namespace diziler_ArraySinifiMetodlari
             foreach (var sayi in sayiDizisi)
                 Console.WriteLine(sayi);
 
+            //Reverse:Dizi elemanlarını tersine sıralar.Dizinin ortasını belirleyerek elemanlarını aynalar gibi düşünebilirsiniz. Yani dizinin ilk elemanı ile son elemanını yer değiştirir.
+
+            Console.WriteLine("******Array Reverse");
+            Array.Reverse(sayiDizisi);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
         }
     }
 }
