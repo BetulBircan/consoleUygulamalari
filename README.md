@@ -560,6 +560,102 @@ Dizi Tanım: Aynı tipteki verileri bellekte yan yana saklamak istediğimizde di
 
 ![diziler2 sonuc](https://user-images.githubusercontent.com/86554799/148109838-33eabf7e-30b2-438f-9372-53f3a456319c.jpg)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Onbirinci uygulamamı da **_Uygulamalar/diziler_ArraySinifiMetodlari/Program.cs_** klasörünün içerisinde oluşturdum. Bu projede Array Sınıfından olan Sort, Clear, Reverse, IndexOf, ReSize metodlarını inceleyip bunlarla ilgili uygulamalar geliştirdim.
+
+-**İlk Örnek-Sort:** Diziler üzerinden sıralama işlemi yapar. Eğer string bir dizi ise alfabetik olarak olarak A'dan Z'ye sıralar. Eğer numeric bir dizi ise dizi elemanlarını küçükten büyüğe sıralar.
+
+**Örnek Kodları**
+
+```
+             //Diziler System.Array sınıfından türerler. Array sınıfı da dizilerle yapılan işlemleri kolaylaştırmak için bir takım static hazır metotlar sunar.Sık kullanılan Array metotları:
+
+            //Sort:Diziler üzerinden sıralama işlemi yapar. Eğer string bir dizi ise alfabetik olarak olarak A'dan Z'ye sıralar. Eğer numeric bir dizi ise dizi elemanlarını küçükten büyüğe sıralar.
+            
+            int[] sayiDizisi = {23, 12, 4, 86, 72, 3, 11, 17};
+            Console.WriteLine("******Sırasız Dizi******");
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+            Console.WriteLine("******Sıralı Dizi******");
+            Array.Sort(sayiDizisi);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+```
+
+**Örnek Sonucu**
+
+![Arraysortsonuc](https://user-images.githubusercontent.com/86554799/148115477-97f2b6f9-2859-4908-9f30-2bc4a32f7de5.jpg)
+
+-**İkinci Örnek-Clear:** Dizi içerisinde verdiğimiz indexten başlayarak verdiğimiz eleman sayısı kadar değeri 0 lar.yani varsayılan değerini döndürür. int türünde varsayılan değer 0 dır.
+
+**Örnek Kodlar**
+
+```
+
+            Console.WriteLine("******Array Clear******");
+            Array.Clear(sayiDizisi,2,2);  //sayiDizisi elemanlarını kullanarak 2.indexten itibaren 2 tane elemanı 0'lar.
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+```
+
+**Örnek Sonucu**
+
+![Arrayclearsonuc](https://user-images.githubusercontent.com/86554799/148115745-6e689aaa-f266-4856-b483-270065a0385c.jpg)
+
+-**Üçüncü Örnek-Reverse:** Dizi elemanlarını tersine sıralar.Dizinin ortasını belirleyerek elemanlarını aynalar gibi düşünebilirsiniz. Yani dizinin ilk elemanı ile son elemanını yer değiştirir.
+
+**Örnek Kodlar**
+
+```
+            Console.WriteLine("******Array Reverse******");
+            Array.Reverse(sayiDizisi);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+```
+
+**Örnek Sonucu**
+
+![Arrayreversesonuc](https://user-images.githubusercontent.com/86554799/148117374-a5e9e0da-78dd-4ead-99e6-6465a9b26b48.jpg)
+
+-**Dördüncü Örnek-IndexOf:** Verdiğiniz dizi üzerinde verdiğiniz elemanın eğer içerisinde varsa index numarasını döner.
+
+**Örnek Kodlar**
+
+```
+            //IndexOf:Verdiğiniz dizi üzerinde verdiğiniz elemanın eğer içerisinde varsa index numarasını döner.
+            Console.WriteLine("******Array IndexOf******");
+            Console.WriteLine(Array.IndexOf(sayiDizisi,23));
+            
+```
+
+**Örnek Sonucu**
+
+![Arrayindexofsonuc](https://user-images.githubusercontent.com/86554799/148116463-0b725e29-cd64-4593-85b9-b2d366642348.jpg)
+
+-**Beşinci Örnek-ReSize:** Yeniden boyutlandırma yapar.
+
+**Örnek Kodlar:**
+
+```
+            Console.WriteLine("******Arrayy Resize******");
+            Array.Resize<int>(ref sayiDizisi,9);
+            sayiDizisi[8] = 99;
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+```
+
+**Örnek Sonucu**
+
+![arrayresizesonuc](https://user-images.githubusercontent.com/86554799/148116683-2e9e0d66-69d0-4464-b881-4bfe12c8e7ed.jpg)
+
+       
+
 
 
            
